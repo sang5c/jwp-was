@@ -27,6 +27,7 @@ public class HttpParams {
                 .collect(Collectors.toMap(kv -> kv[0], kv -> kv[1]));
     }
 
+    // TODO: 별도의 객체로 분리
     private String[] parseKeyValue(String q) {
         String[] keyValue = q.split(KEY_VALUE_SPLIT_REGEX);
         if (isValidLength(keyValue)) {

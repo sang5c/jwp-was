@@ -31,6 +31,7 @@ public class HttpPath {
         }
     }
 
+    // TODO: 객체 대신 필요한 정보를 반환하는 역할
     public HttpParams getHttpParams() {
         return httpParams;
     }

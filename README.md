@@ -31,3 +31,26 @@
   - [X] POST RequestLine 파싱
     - "POST /users HTTP/1.1"을 파싱
   - [X] Querystring RequestLine 파싱
+
+### 피드백
+1. NotNull 대신 값을 확인해보는 테스트
+2. parseKeyValue, isValidLength params와 분리
+3. getHttpParams에서 객체 자체 리턴 대신 필요한 정보만 리턴
+
+## Step 2 - HTTP 웹 서버 구현
+### 기능 요구사항
+- http://localhost:8080/index.html 로 접속했을 때 webapp 디렉토리의 index.html 파일을 읽어 클라이언트에 응답한다.
+  - 힌트
+    - InputStream -> BufferedReader
+    - http header 전체 출력 -> !"".equals(line)"
+- 요구사항 도출
+  - InputStream을 읽어 HttpRequest를 생성한다.
+  - HttpRequest
+    - -> RequestLine 
+    - -> HttpHeaders
+    - -> HttpBody (나중에)
+  - 현재 단계의 요구사항을 구현하기 위해 단순히 FileIoUtils를 사용한다. 
+  - (나중에) HttpResponse를 만들어 OutputStream에 쓴다. 
+    - -> HttpStatus
+    - -> HttpHeaders
+    - -> HttpBody

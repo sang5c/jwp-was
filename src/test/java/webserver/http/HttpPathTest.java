@@ -25,6 +25,7 @@ public class HttpPathTest {
                 .isInstanceOf(IllegalArgumentException.class);
     }
 
+    // TODO: NotNull 대신 값을 확인해보는 테스트
     @DisplayName("Querystring RequestLine 파싱")
     @Test
     void querystring() {
