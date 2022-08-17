@@ -46,6 +46,7 @@
 - 요구사항 도출
   - InputStream을 읽어 HttpRequest를 생성한다.
   - HttpRequest
+    - [X] 문자열 리스트를 받아 객체를 생성한다. 
     - -> RequestLine 
     - -> HttpHeaders
       - [X] 문자열 목록을 받아 HttpHeader List를 생성한다.
