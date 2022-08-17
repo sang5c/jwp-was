@@ -32,4 +32,8 @@ public class HttpHeader {
     public String getValue() {
         return value;
     }
+
+    public boolean equalsKey(String key) {
+        return this.key.equals(key);
+    }
 }
