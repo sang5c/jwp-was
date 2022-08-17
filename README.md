@@ -54,7 +54,7 @@
         - [X] 문자열을 받아 HttpHeader를 생성한다.
           - 키, 밸류로 구성된다.
           - ": "를 기준으로 키, 밸류를 나눈다.
-        - [ ] 잘못된 문자열을 받으면 exception이 발생한다.
+        - [X] 잘못된 문자열을 받으면 exception이 발생한다.
     - -> HttpBody (나중에)
   - 현재 단계의 요구사항을 구현하기 위해 단순히 FileIoUtils를 사용한다. 
   - (나중에) HttpResponse를 만들어 OutputStream에 쓴다. 
