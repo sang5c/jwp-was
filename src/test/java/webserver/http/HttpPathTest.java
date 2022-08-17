@@ -15,6 +15,7 @@ public class HttpPathTest {
     @CsvSource({"/hello", "/", "/test123"})
     void create(String path) {
         assertThat(new HttpPath(path)).isNotNull();
+        assertThat(new HttpPath(path).match(path)).isTrue();
     }
 
     @DisplayName("잘못된 형식의 문자열의 경우 Exception이 발생한다")

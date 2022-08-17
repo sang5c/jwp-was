@@ -35,4 +35,8 @@ public class HttpPath {
     public HttpParams getHttpParams() {
         return httpParams;
     }
+
+    public boolean match(String path) {
+        return this.path.equals(path);
+    }
 }
